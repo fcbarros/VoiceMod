@@ -12,3 +12,5 @@ There are two programs as requested:
 There is no test done and I am not proud of that, this was just a proof of concept to display some of the code I can do.
 
 Fell free to ask and/or comment on anything.
+
+Both executables are in ZIP files.
