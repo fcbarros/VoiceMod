@@ -1,0 +1,29 @@
+﻿<Window x:Class="ChatClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="691*"/>
+            <ColumnDefinition Width="109*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="NameTB" HorizontalAlignment="Left" Margin="58,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="23"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top" Height="28"/>
+        <ListBox x:Name="MessageListLB" Margin="10,69,111,35"/>
+        <TextBox x:Name="MessageTB" HorizontalAlignment="Left" Margin="10,0,0,10" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="677" Height="20"/>
+        <Button x:Name="SendMessageB" Content="Send" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="98" Click="SendMessageButton_Click" Grid.Column="1"/>
+        <Button x:Name="ConnectB" Content="Connect" HorizontalAlignment="Left" Margin="619,10,0,0" VerticalAlignment="Top" Click="Connect_Click" Width="83" Grid.ColumnSpan="2" Height="23"/>
+        <TextBox x:Name="ServerPortTB" HorizontalAlignment="Left" Margin="516,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" Height="23"/>
+        <Label Content="Serrver Port&#xA;" HorizontalAlignment="Left" Margin="439,8,0,0" VerticalAlignment="Top" Height="28"/>
+        <Button x:Name="DisconnectB" Content="Disconnect" HorizontalAlignment="Left" Margin="16,10,0,0" VerticalAlignment="Top" Click="Disconnect_Click" Width="83" IsEnabled="False" Grid.Column="1" Height="23"/>
+        <Label Content="Chat&#xA;" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Height="28"/>
+        <ListBox x:Name="UserListLB" Margin="585,69,10,35" Grid.ColumnSpan="2"/>
+        <Label Content="Connected&#xA;" HorizontalAlignment="Left" Margin="585,43,0,0" VerticalAlignment="Top" Height="28"/>
+
+    </Grid>
+</Window>
